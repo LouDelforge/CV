@@ -8,8 +8,6 @@
 }
 
 :root {
-    --color-blue : #122b52;
-    --color-lightblue: #1f4482;
     --color-darkblue: #0e2241;
     --color-red: #fd5e55;
     --color-white: #FFFFFF;
@@ -18,6 +16,16 @@
     --color-grey: darkgrey;
     --color-lightgrey : #c7c5c4;
     --box-shadow-1: 0 35px 55px rgba(0,0,0,.2);
+
+    --color-lightblue: #1f4482;
+    --color-cyan: #d2e4f6;
+    --color-darkblue: #0e2241;
+    --color-red: #fd5e55;
+    --color-darkgrey: darkgrey;
+    --color-lightgrey : #c7c5c4;
+    --color-almostwhite: #E7E8E4;
+    --color-white : #fff; 
+    --color-black : #000;
 }
   
 body
@@ -226,33 +234,33 @@ a:hover
   top: 0;
   left: 0;
   height: 100%;
-  background: #122b52;
+  background: var(--color-darkblue);
 }
 
-.compétences
+.competence
 {
   padding-top: 20px;
   margin-bottom: 15px;
 }
 
-.compétences ul
+.competence ul
 {
   position: relative;
 }
 
-.compétences ul li
+.competence ul li
 {
   position: relative;
   list-style: none;
   color: #c7c5c4;
 }
 
-.compétences ul li span
+.competence ul li span
 {
   color: #c7c5c4;
 }
 
-.compétences .percent
+.competences .percent
 {
   position:relative;
   width: 100%;
@@ -262,7 +270,7 @@ a:hover
   margin-top: 5px;
 }
 
-.compétences .percent div
+.competences .percent div
 {
   position: absolute;
   top: 0;
