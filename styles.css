@@ -8,21 +8,12 @@
 }
 
 :root {
-    --color-darkblue: #0e2241;
-    --color-red: #fd5e55;
-    --color-white: #FFFFFF;
-    --color-white1: #E7E8E4;
-    --color-black: #000;
-    --color-grey: darkgrey;
-    --color-lightgrey : #c7c5c4;
-    --box-shadow-1: 0 35px 55px rgba(0,0,0,.2);
-
     --color-lightblue: #1f4482;
     --color-cyan: #d2e4f6;
     --color-darkblue: #0e2241;
     --color-red: #fd5e55;
     --color-darkgrey: darkgrey;
-    --color-lightgrey : #c7c5c4;
+    --color-lightgrey : ##c7c5c4;
     --color-almostwhite: #E7E8E4;
     --color-white : #fff; 
     --color-black : #000;
@@ -47,7 +38,7 @@ body
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  background: #E7E8E4;
+  background: var(--color-almostwhite);
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -95,12 +86,12 @@ body
   text-align: center;
   font-weight: 600;
   line-height: 1.4em;
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
 }
 
 .profileText h2 span
 {
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
   font-size: 0.7em;
   font-weight: 300;
   border-bottom: 1.5px solid rgba(253, 94, 85, 0.8);
@@ -109,7 +100,7 @@ body
 
 .title
 {
-  color: #fd5e55;
+  color: var(--color-red);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -125,7 +116,7 @@ a
 
 a:hover
 {
-    color:#0e2241;
+    color:var(--color-darkblue);
     text-decoration:none;
     cursor:pointer;
 }
@@ -152,12 +143,12 @@ a:hover
   display: inline-block;
   width: 30px;
   font-size: 18px;
-  color: #c7c5c4
+  color: var(--color-lightgrey)
 }
 
 .contact ul li span
 {
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
   font-weight: 300;
   font-size: 16px;
 }
@@ -184,14 +175,14 @@ a:hover
 .formation h5
 {
   font-weight: 550;
-  color: #0e2241;
+  color: var(--color-darkblue);
   font-size: 14px;
 }
 
 .formation h4
 {
   font-weight: 500;
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
   font-size: 16px;
 }
 
@@ -214,7 +205,7 @@ a:hover
 
 .langues ul li span
 {
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
   font-weight: 300;
 }
 
@@ -223,7 +214,7 @@ a:hover
   position:relative;
   width: 100%;
   height: 6px;
-  background: #c7c5c4;
+  background: var(--color-lightgrey);
   display: block;
   margin-top: 5px;
 }
@@ -252,12 +243,12 @@ a:hover
 {
   position: relative;
   list-style: none;
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
 }
 
 .competence ul li span
 {
-  color: #c7c5c4;
+  color: var(--color-lightgrey);
 }
 
 .competences .percent
@@ -265,7 +256,7 @@ a:hover
   position:relative;
   width: 100%;
   height: 6px;
-  background: #c7c5c4;
+  background: var(--color-lightgrey);
   display: block;
   margin-top: 5px;
 }
@@ -276,13 +267,13 @@ a:hover
   top: 0;
   left: 0;
   height: 100%;
-  background: #122b52;
+  background: var(--color-darkblue);
 }
 
 .container .right_side
 {
   position: relative;
-  background: #c7c5c4;
+  background: var(--color-lightgrey);
   padding:50px;
 }
 
@@ -308,7 +299,7 @@ a:hover
 }
 .container .right_side .name
 {
-  color: #122b52;
+  color: var(--color-darkblue);
   font-size: 17px;
   font-weight: bold;
   margin-top: 5px;
@@ -328,7 +319,7 @@ a:hover
 {
   position: relative;
   list-style: none;
-  color: #122b52;
+  color: var(--color-darkblue);
   font-size: 15px;
   font-weight: normal;
   margin-bottom: 0px;
