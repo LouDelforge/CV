@@ -13,7 +13,7 @@
     --color-darkblue: #0e2241;
     --color-red: #fd5e55;
     --color-darkgrey: darkgrey;
-    --color-lightgrey : ##c7c5c4;
+    --color-lightgrey : #c7c5c4;
     --color-almostwhite: #E7E8E4;
     --color-white : #fff; 
     --color-black : #000;
@@ -28,27 +28,20 @@ body
   min-height: 100vh;
 }
 
-{
- font-family: Comic Sans MS;
-}
-
 .container
 {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
-  background: var(--color-almostwhite);
+  background: var(--color-lightgrey);
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
 }
 
 .container .left_side
 {
   position: relative;
-  background: #1f4482;
+  background: var(--color-lightblue) ; 
   padding: 40px;
 }
 
@@ -63,17 +56,17 @@ body
 
 .profileText .imgBx
 {
-  position: relative;
-  width: 200px;
-  height: 200px;
+  position: center;
+  width: 220px;
+  height: 220px;
 }
 
 .profileText .imgBx img
 {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
-  width: 100%
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -91,10 +84,10 @@ body
 
 .profileText h2 span
 {
-  color: var(--color-lightgrey);
+  color: var(--color-cyan);
   font-size: 0.7em;
   font-weight: 300;
-  border-bottom: 1.5px solid rgba(253, 94, 85, 0.8);
+  border-bottom: 2px solid rgba(194,65,61,1);
   padding-bottom: 40px;
 }
 
@@ -143,7 +136,7 @@ a:hover
   display: inline-block;
   width: 30px;
   font-size: 18px;
-  color: var(--color-lightgrey)
+  color: var(--color-cyan);
 }
 
 .contact ul li span
@@ -228,30 +221,30 @@ a:hover
   background: var(--color-darkblue);
 }
 
-.competence
+.compétences
 {
   padding-top: 20px;
   margin-bottom: 15px;
 }
 
-.competence ul
+.compétences ul
 {
   position: relative;
 }
 
-.competence ul li
+.compétences ul li
 {
   position: relative;
   list-style: none;
   color: var(--color-lightgrey);
 }
 
-.competence ul li span
+.compétences ul li span
 {
   color: var(--color-lightgrey);
 }
 
-.competences .percent
+.compétences .percent
 {
   position:relative;
   width: 100%;
@@ -261,7 +254,7 @@ a:hover
   margin-top: 5px;
 }
 
-.competences .percent div
+.compétences .percent div
 {
   position: absolute;
   top: 0;
@@ -279,8 +272,8 @@ a:hover
 
 .container .right_side .about
 {
-  margin-bottom: 30px;
-  color: #1f4482;
+  position: center;
+  color: var(--color-lightblue) ; 
   font-size: 22px;
   font-weight: bolder;
   margin-bottom: 50px;
@@ -288,7 +281,7 @@ a:hover
 
 .container .right_side .about .icon
 {
-  color: #1f4482;
+  color: var(--color-lightblue) ; 
   font-size: 18px;
   font-weight: bold;
 }
@@ -297,6 +290,7 @@ a:hover
 {
   margin-top: 5px;
 }
+
 .container .right_side .name
 {
   color: var(--color-darkblue);
@@ -304,6 +298,7 @@ a:hover
   font-weight: bold;
   margin-top: 5px;
 }
+
 .name span
 {
   font-size: 12px;
