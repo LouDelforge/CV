@@ -32,6 +32,8 @@ body
 {
   position: relative;
   width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
   background: var(--color-lightgrey);
   margin: 50px;
   display: grid;
@@ -123,6 +125,7 @@ a:hover
 .contact ul
 {
   position: relative;
+  list-style: none;
 }
 
 .contact ul li
@@ -221,30 +224,30 @@ a:hover
   background: var(--color-darkblue);
 }
 
-.compétences
+.competences
 {
   padding-top: 20px;
   margin-bottom: 15px;
 }
 
-.compétences ul
+.competences ul
 {
   position: relative;
 }
 
-.compétences ul li
+.competences ul li
 {
   position: relative;
   list-style: none;
   color: var(--color-lightgrey);
 }
 
-.compétences ul li span
+.competences ul li span
 {
   color: var(--color-lightgrey);
 }
 
-.compétences .percent
+.competences .percent
 {
   position:relative;
   width: 100%;
@@ -254,7 +257,7 @@ a:hover
   margin-top: 5px;
 }
 
-.compétences .percent div
+.competences .percent div
 {
   position: absolute;
   top: 0;
