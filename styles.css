@@ -12,7 +12,7 @@
     --color-cyan: #d2e4f6;
     --color-darkblue: #0e2241;
     --color-red: #fd5e55;
-    --color-darkgrey: darkgrey;
+    --color-darkgrey: #a9a9a9;
     --color-lightgrey : #c7c5c4;
     --color-almostwhite: #E7E8E4;
     --color-white : #fff; 
@@ -22,10 +22,9 @@
 body
 {
   background: var(--color-darkgrey);
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .container
@@ -33,11 +32,10 @@ body
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 1000px;
+  max-height: 1000px;
   background: var(--color-lightgrey);
-  margin: 50px;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .container .left_side
@@ -45,6 +43,7 @@ body
   position: relative;
   background: var(--color-lightblue) ; 
   padding: 40px;
+  width: 100%;
 }
 
 .profileText
@@ -271,6 +270,7 @@ a:hover
   position: relative;
   background: var(--color-lightgrey);
   padding:60px;
+  width: 100%;
 }
 
 .container .right_side .about
@@ -279,7 +279,7 @@ a:hover
   color: var(--color-lightblue) ; 
   font-size: 22px;
   font-weight: bolder;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .container .right_side .about .icon
@@ -291,7 +291,7 @@ a:hover
 
 .about li
 {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .container .right_side .name
@@ -305,6 +305,33 @@ a:hover
 .name span
 {
   font-size: 12px;
+}
+
+.container .right_side .about_sub 
+{
+  position: center;
+  color: var(--color-lightblue) ; 
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.about_sub li
+{
+  margin-top: 0px;
+}
+
+.container .right_side .name_sub
+{
+  color: var(--color-darkblue);
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.name_sub span
+{
+  font-size: 10px;
 }
 
 .container .right_side ul
